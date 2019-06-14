@@ -5,7 +5,7 @@ ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
 
 COPY . /home/site/wwwroot
 
-RUN apt-get install libfreetype6 \
+RUN apt-get install -y libfreetype6 \
         libfontconfig
 
 RUN cd /home/site/wwwroot && \
